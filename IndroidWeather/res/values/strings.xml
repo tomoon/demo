@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+    
+    <string name="weather_q">sunny</string>
+    <string name="weather_dyun">cloudy</string>
+    <string name="weather_y">overcast</string>
+    <string name="weather_zhy">showers</string>
+    <string name="weather_lzhy">thunder shower</string>
+    <string name="weather_lzhybbybb">雷阵雨并伴有冰雹</string>
+    <string name="weather_yjx">sleet</string>
+    <string name="weather_xy">light rain</string>
+    <string name="weather_zhongyu">moderate rain</string>
+    <string name="weather_dy">heavy rain</string>
+    <string name="weather_by">rainstorm</string>
+    <string name="weather_dby">rainstorm</string>
+    <string name="weather_tdby">rainstorm</string>
+    <string name="weather_zhx">snow shower</string>
+    <string name="weather_xx">light snow</string>
+    <string name="weather_zhongx">moderate snow</string>
+    <string name="weather_dx">heavy snow</string>
+    <string name="weather_bx">snowstorm</string>
+    <string name="weather_w">fog</string>
+    <string name="weather_dongyu">freezing rain</string>
+    <string name="weather_schb">dust storms</string>
+    <string name="weather_xyzhy">light to moderate rain</string>
+    <string name="weather_zhydy">moderate to heavy rain</string>
+    <string name="weather_dyby">heavy rain</string>
+    <string name="weather_bydby">rainstorm</string>
+    <string name="weather_dbytdby">rainstorm</string>
+    <string name="weather_xxzhx">light to moderate snow</string>
+    <string name="weather_zhxdx">moderate to heavy snow</string>
+    <string name="weather_dxbx">heavy rain</string>
+    <string name="weather_fch">fly ash</string>
+    <string name="weather_ysh">sand blowing</string>
+    <string name="weather_qshchb">heavy sandstorm</string>
+    <string name="weather_nothing">no data</string>
+    
+    <string name="weather_to">to</string>
+    <string name="sheshidu">℃</string>
+    <string name="qiwen_separator">气温：</string>
+
+    <string name="error">Request weather infomation failed！</string>
+    
+    <!-- settings -->
+    <string name="settings_city_select">Select city</string>
+    <string name="current_city">Current city:%s</string>
+    <string name="settings_update_frequency">Update rate</string>
+    <string name="current_update_frequency">Current rate:%s hour</string>
+    <string name="settings_style">Style</string>
+    <string-array name="update_frequency_list">
+        <item>2hour</item>
+        <item>4hour</item>
+        <item>6hour</item>
+    </string-array>
+    
+    <string-array name="update_frequency_value">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+    
+    <string name="unknown">unknown</string>
+    <string name="initing">Initing...</string>
+
+    <string name="weather_warning">Weather warning</string>    
+    <string name="today">Today</string>
+    <string-array name="weekday">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    
+    <string name="date_format">MM-dd</string>
+    
+    <string name="min_to_max">/</string>
+    <string name="no_weather_data">No weather data</string>
+    <string name="loading">Loading...</string>
+    <string name="update_time">Update time:</string>
+</resources>

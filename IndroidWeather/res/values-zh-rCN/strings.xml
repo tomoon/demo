@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天气</string>
+    
+    <string name="weather_q">晴</string>
+    <string name="weather_dyun">多云</string>
+    <string name="weather_y">阴</string>
+    <string name="weather_zhy">阵雨</string>
+    <string name="weather_lzhy">雷阵雨</string>
+    <string name="weather_lzhybbybb">雷阵雨并伴有冰雹</string>
+    <string name="weather_yjx">雨加雪</string>
+    <string name="weather_xy">小雨</string>
+    <string name="weather_zhongyu">中雨</string>
+    <string name="weather_dy">大雨</string>
+    <string name="weather_by">暴雨</string>
+    <string name="weather_dby">大暴雨</string>
+    <string name="weather_tdby">特大暴雨</string>
+    <string name="weather_zhx">阵雪</string>
+    <string name="weather_xx">小雪</string>
+    <string name="weather_zhongx">中雪</string>
+    <string name="weather_dx">大雪</string>
+    <string name="weather_bx">暴雪</string>
+    <string name="weather_w">雾</string>
+    <string name="weather_dongyu">冻雨</string>
+    <string name="weather_schb">沙尘暴</string>
+    <string name="weather_xyzhy">小雨-中雨</string>
+    <string name="weather_zhydy">中雨-大雨</string>
+    <string name="weather_dyby">大雨-暴雨</string>
+    <string name="weather_bydby">暴雨-大暴雨</string>
+    <string name="weather_dbytdby">大暴雨-特大暴雨</string>
+    <string name="weather_xxzhx">小雪-中雪</string>
+    <string name="weather_zhxdx">中雪-大雪</string>
+    <string name="weather_dxbx">大雪-暴雪</string>
+    <string name="weather_fch">浮尘</string>
+    <string name="weather_ysh">扬沙</string>
+    <string name="weather_qshchb">强沙尘暴</string>
+    <string name="weather_nothing">没有数据</string>
+    
+    <string name="weather_to">转</string>
+    <string name="sheshidu">℃</string>
+    
+    <string name="error">天气信息获取失败！</string>
+    
+    <!-- settings -->
+    <string name="settings_city_select">选择城市</string>
+    <string name="current_city">当前城市：%s</string>
+    <string name="settings_update_frequency">更新频率</string>
+    <string name="current_update_frequency">当前频率：%s小时</string>
+    <string name="settings_style">风格</string>
+    <string-array name="update_frequency_list">
+        <item>2小时</item>
+        <item>4小时</item>
+        <item>6小时</item>
+    </string-array>
+    
+    <string-array name="update_frequency_value">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+    
+    <string name="unknown">未知</string>
+    <string name="initing">正在初始化</string>
+    <string name="weather_warning">恶劣天气提醒</string>    
+    
+    <string name="today">今天</string>
+    
+    <string-array name="weekday">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    
+    <string name="date_format">MM月dd日</string>
+    <string name="no_weather_data">无天气数据</string>
+    <string name="loading">正在加载...</string>
+    <string name="update_time">更新时间:</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="select_city"
+        android:title="@string/settings_city_select" >
+        <intent
+            android:targetClass="cn.ingenic.weather.CitySelectActivity"
+            android:targetPackage="cn.ingenic.weather" />
+    </Preference>
+
+    <ListPreference
+        android:key="update_frequency"
+        android:title="@string/settings_update_frequency" 
+        android:entries="@array/update_frequency_list"
+        android:entryValues="@array/update_frequency_value"/>
+
+    <!--
+    <Preference
+        android:key="select_style"
+        android:title="@string/settings_style" >
+        <intent
+            android:targetClass="cn.ingenic.weather.StyleChooseActivity"
+            android:targetPackage="cn.ingenic.weather" />
+    </Preference>
+    -->
+</PreferenceScreen>

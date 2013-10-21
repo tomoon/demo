@@ -1,0 +1,73 @@
+package com.android.music;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Display;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.GestureDetector.SimpleOnGestureListener;
+
+public abstract class MusicBaseActivity extends Activity {
+    
+    private static final String TAG = "MusicBaseActivity";
+    
+    private GestureDetector mGestureDetector;
+    private static final int MIN_X_FLING_DISTANCE = 20;
+    //public static Activity callBackListenser;
+    
+    public abstract boolean supportFlingLeft();
+    public abstract boolean supportFlingRight();
+    public abstract void  flingLeft();
+    public abstract void  flingRight();
+    
+    
+    //public static void setCallback(Activity activity){
+    //	callBackListenser = activity;
+    //}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		// TODO Auto-generated method stub
+	    if (mGestureDetector.onTouchEvent(event))
+		return true;
+	    return super.onTouchEvent(event);
+	}
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		 mGestureDetector = new GestureDetector(this, new MyGestureListener());
+	}
+	
+	private class MyGestureListener extends SimpleOnGestureListener {    
+	    @Override
+		public boolean onScroll(MotionEvent e1, MotionEvent e2,
+					float distanceX, float distanceY) {
+		float mOldX = e1.getX(), mOldY = e1.getY();
+		int y = (int) e2.getRawY();
+		float x = e2.getX();
+		Display disp = getWindowManager().getDefaultDisplay();
+		int windowWidth = disp.getWidth();
+		int windowHeight = disp.getHeight();
+		float distance = x -mOldX;
+		float min_x_distance = windowWidth / 12;
+		android.util.Log.d(TAG,"distance="+distance+",min_x_distance="+min_x_distance);
+
+		if(distance> min_x_distance){ //fling  left
+			if(supportFlingLeft()){
+				flingLeft();
+			}
+		}else if(distance < - min_x_distance){
+			if(supportFlingRight()){
+				flingRight();
+			}
+		}
+		
+		return super.onScroll(e1, e2, distanceX, distanceY);
+	    }
+	}
+	
+	
+	
+}
